@@ -10,10 +10,10 @@
  * CPU configuration
  */
 /* CPU Timer rate */
-#define CONFIG_SYS_MIPS_TIMER_FREQ	60000000
+#define CONFIG_SYS_MIPS_TIMER_FREQ	40000000
 
 /* Cache Configuration */
-#define CONFIG_SYS_MIPS_CACHE_MODE	CONF_CM_CACHABLE_NONCOHERENT
+// #define CONFIG_SYS_MIPS_CACHE_MODE	CONF_CM_CACHABLE_NONCOHERENT
 
 /* Time Measuring */
 #define TRIVIALMIPS_NSCSCC_TIMER_ADDR		0xbff0e000
@@ -53,7 +53,7 @@
 #define CONFIG_SYS_NS16550_MEM32
 #define CONFIG_SYS_NS16550_COM1 0xbfd03000
 #define CONFIG_SYS_NS16550_CLK 100000000
-#define CONFIG_SYS_NS16550_IER 0
+// #define CONFIG_SYS_NS16550_IER 0
 
 
 /* -------------------------------------------------

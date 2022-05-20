@@ -5,6 +5,8 @@
 
 DECLARE_GLOBAL_DATA_PTR;
 
+void lowlevel_init() {}
+
 /* initialize the DDR Controller and PHY */
 int dram_init(void)
 {
