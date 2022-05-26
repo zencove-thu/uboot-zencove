@@ -277,7 +277,11 @@ static inline void instruction_hazard_barrier(void)
 
 	asm volatile(
 	__stringify(PTR_LA) "\t%0, 1f\n"
+#if MIPS_ISA_REV >= 1
 	"	jr.hb	%0\n"
+#else
+    "	jr	%0\n"
+#endif
 	"1:	.insn"
 	: "=&r"(tmp));
 }
