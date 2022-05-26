@@ -44,7 +44,6 @@
 	.macro	l1_info		sz, line_sz, off
 	.set	push
 	.set	noat
-	.set	mips32
 
 	mfc0	$1, CP0_CONFIG, 1
 
@@ -94,6 +93,8 @@
 	li	a0, \mode
 	jalr	t0
 	.endm
+
+	.set	mips32
 
 /*
  * mips_cache_reset - low level initialisation of the primary caches
