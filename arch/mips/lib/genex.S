@@ -14,6 +14,7 @@
 #define STATMASK 0x1f
 
 	.set	noreorder
+	.set	mips32
 
 	/*
 	 * Macros copied and adapted from Linux MIPS
