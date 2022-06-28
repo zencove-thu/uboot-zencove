@@ -3,6 +3,12 @@
 # (C) Copyright 2000 - 2013
 # Wolfgang Denk, DENX Software Engineering, wd@denx.de.
 
+Note
+========
+- `make CROSS_COMPILE=mipsel-linux-gnu- llcl_defconfig`
+- `make CROSS_COMPILE=mipsel-linux-gnu-`
+- `-fno-delayed-branch` added
+
 Summary:
 ========
 
