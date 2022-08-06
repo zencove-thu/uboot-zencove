@@ -87,7 +87,7 @@
 #define CONFIG_SYS_FLASH_BASE               0x1c040000
 
 
-#define DEBUG
+// #define DEBUG
 
 #endif /* __TRIVIALMIPS_NSCSCC_CONFIG_H */
 

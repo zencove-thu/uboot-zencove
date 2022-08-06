@@ -73,7 +73,7 @@
 	axi_ethernetlite: ethernet@bc000000 {
 		compatible = "xlnx,xps-ethernetlite-1.00.a";
 		device_type = "network";
-		local-mac-address = [19 98 00 01 00 29];
+		local-mac-address = [18 98 00 01 00 29];
 		phy-handle = <&phy0>;
 		reg = <0xbc000000 0x10000>;
 		xlnx,duplex = <0x1>;

@@ -5,9 +5,9 @@
 
 Note
 ========
-- `make CROSS_COMPILE=mipsel-linux-gnu- llcl_defconfig`
+- `make CROSS_COMPILE=mipsel-linux-gnu- zencove_defconfig`
 - `make CROSS_COMPILE=mipsel-linux-gnu-`
-- `-fno-delayed-branch` added
+- ~~`-fno-delayed-branch` added~~
 
 Summary:
 ========
