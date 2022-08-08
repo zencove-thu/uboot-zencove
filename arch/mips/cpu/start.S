@@ -25,6 +25,7 @@
 #endif
 
 	.set noreorder
+	.set mips32
 
 	.macro init_wr sel
 	MTC0	zero, CP0_WATCHLO,\sel

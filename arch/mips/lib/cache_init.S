@@ -94,6 +94,8 @@
 	jalr	t0
 	.endm
 
+	.set	mips32
+
 /*
  * mips_cache_reset - low level initialisation of the primary caches
  *
@@ -435,5 +437,9 @@ LEAF(change_k0_cca)
 #endif
 	mtc0		a0, CP0_CONFIG
 
+#if MIPS_ISA_REV >= 1
 	jr.hb		ra
+#else
+	jr		ra
+#endif
 	END(change_k0_cca)

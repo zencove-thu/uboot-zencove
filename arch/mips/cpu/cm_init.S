@@ -11,6 +11,8 @@
 #include <asm/mipsregs.h>
 #include <asm/regdef.h>
 
+	.set mips32
+
 LEAF(mips_cm_map)
 	/* Config3 must exist for a CM to be present */
 	mfc0		t0, CP0_CONFIG, 1

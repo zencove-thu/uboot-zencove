@@ -25,6 +25,7 @@ libs-y += $(machdirs)
 PLATFORM_CPPFLAGS += $(patsubst %,-I$(srctree)/%include,$(machdirs))
 
 # Optimize for MIPS architectures
+arch-$(CONFIG_CPU_MIPS3) += -march=mips3 -Wa,-mips3
 arch-$(CONFIG_CPU_MIPS32_R1) += -march=mips32 -Wa,-mips32
 arch-$(CONFIG_CPU_MIPS32_R2) += -march=mips32r2 -Wa,-mips32r2
 arch-$(CONFIG_CPU_MIPS32_R6) += -march=mips32r6 -Wa,-mips32r6
